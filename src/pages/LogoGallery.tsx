@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import ScrollProgress from '@/components/ui/scroll-progress';
-import { useLanguage } from '@/contexts/LanguageContext';
-import { translations } from '@/lib/translations';
-import LogoGrid from '@/components/LogoGrid';
-import { Logo1, Logo2, Logo3, Logo4, Logo5, Logo6, Logo7, Logo8, Logo9, Logo10, Logo11, Logo12 } from '@/lib/images';
+import { useLanguage } from '@/contexts/LanguageContext'
+import { Logo1, Logo2, Logo3, Logo4, Logo5, Logo6, Logo7, Logo8, Logo9, Logo10, Logo11, Logo12 } from '@/lib/images'
 
 const logos = [
   { id: 1, image: Logo1 },
@@ -21,7 +18,7 @@ const logos = [
   { id: 12, image: Logo12 },
 ];
 
-const LogoGallery: React.FC = () => {
+const LogoGallery = () => {
   const [loading, setLoading] = useState(true);
   const { t, language } = useLanguage();
 
@@ -34,8 +31,7 @@ const LogoGallery: React.FC = () => {
 
   return (
     <div className="py-20 px-4">
-      <ScrollProgress />
-      <div className="container-custom">
+      <div>
         <motion.h1 
           className={`text-4xl md:text-5xl font-${language === 'ar' ? '["At Hauss Arabic"]' : '["Helvetica Now Display"]'} font-bold mb-12 text-center`}
           initial={{ opacity: 0, y: -20 }}

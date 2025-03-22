@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Check, Copy } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -41,4 +41,4 @@ const CopyToClipboard = ({ text, className }: CopyToClipboardProps) => {
   )
 }
 
-export default CopyToClipboard 
+export default CopyToClipboard

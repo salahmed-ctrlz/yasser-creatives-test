@@ -22,7 +22,7 @@ const App = () => {
       <ThemeProvider attribute="class" defaultTheme="light">
         <LanguageProvider>
           <TooltipProvider>
-            <Router>
+            <Router basename="/yasser-creatives-test">
               <MainLayout>
                 <Routes>
                   <Route path="/" element={<Home />} />

@@ -15,8 +15,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'hauss': ['At Hauss Arabic', 'sans-serif'],
-        'helvetica': ['Helvetica Now Display', 'sans-serif'],
+        'hauss': ['At Hauss Arabic', 'Arial', 'sans-serif'],
+        'helvetica': ['Helvetica Now Display', 'Arial', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

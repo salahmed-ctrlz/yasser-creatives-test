@@ -1,9 +1,8 @@
-import React from 'react'
 import { motion } from 'framer-motion'
 import { fadeUpVariant, staggerContainer, imageRevealVariant, textRevealVariant } from '@/lib/animations'
-import ScrollProgress from '@/components/ui/scroll-progress';
-import { useLanguage } from '@/contexts/LanguageContext';
-import { Portrait } from '@/lib/images';
+import ScrollProgress from '@/components/ui/scroll-progress'
+import { useLanguage } from '@/contexts/LanguageContext'
+import { Portrait } from '@/lib/images'
 
 const About = () => {
   const { t, language } = useLanguage();

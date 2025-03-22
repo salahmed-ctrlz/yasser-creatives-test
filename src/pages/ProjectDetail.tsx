@@ -4,7 +4,6 @@ import { useParams, Link } from 'react-router-dom'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import ScrollProgress from '@/components/ui/scroll-progress';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { fadeUpVariant, staggerContainer } from '@/lib/animations';
 import { FlashPlumberLogo, TayssirLogo, TRLogo, IliaLogo, LAMALogo, OrderLogo } from '@/lib/images';
 
 // Project data with images

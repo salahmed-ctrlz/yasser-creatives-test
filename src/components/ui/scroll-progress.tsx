@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion, useScroll, useSpring } from 'framer-motion'
 import { cn } from '@/lib/utils'
 
@@ -44,4 +44,4 @@ const ScrollProgress = ({
   )
 }
 
-export default ScrollProgress 
+export default ScrollProgress

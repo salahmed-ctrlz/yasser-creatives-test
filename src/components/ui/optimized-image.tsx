@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useRef } from 'react'
 import { cn } from '@/lib/utils'
 import { useIntersectionObserver } from '@/lib/utils/performance'
 
@@ -20,7 +20,8 @@ const OptimizedImage = ({
 }: OptimizedImageProps) => {
   const [isLoaded, setIsLoaded] = useState(false)
   const [isError, setIsError] = useState(false)
-  const imageRef = useIntersectionObserver(
+  const imageRef = useRef<HTMLDivElement>(null);
+  useIntersectionObserver(
     (entry) => {
       if (entry.isIntersecting && !isLoaded) {
         const img = new Image()
@@ -34,7 +35,7 @@ const OptimizedImage = ({
 
   return (
     <div
-      ref={imageRef}
+      ref={imageRef as React.LegacyRef<HTMLDivElement>}
       className={cn('relative overflow-hidden', className)}
     >
       {/* Placeholder */}

@@ -18,20 +18,6 @@ const projectsData = [
   { id: 6, title: "Order", image: OrderLogo, category: "Logo Design" },
 ];
 
-// Sample featured logos
-const featuredLogos = [
-  { id: 1, image: "/logos/logo1.svg", alt: "LOGO" },
-  { id: 2, image: "/logos/logo1.svg", alt: "LOGO" },
-  { id: 3, image: "/logos/logo1.svg", alt: "LOGO" },
-  { id: 4, image: "/logos/logo1.svg", alt: "LOGO" },
-  { id: 5, image: "/logos/logo1.svg", alt: "LOGO" },
-  { id: 6, image: "/logos/logo1.svg", alt: "LOGO" },
-  { id: 7, image: "/logos/logo1.svg", alt: "LOGO" },
-  { id: 8, image: "/logos/logo1.svg", alt: "LOGO" },
-  { id: 9, image: "/logos/logo1.svg", alt: "LOGO" },
-  { id: 10, image: "/logos/logo1.svg", alt: "LOGO" },
-];
-
 const Home: React.FC = () => {
   const { t, language } = useLanguage();
 
