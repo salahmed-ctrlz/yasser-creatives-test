@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        var basePath = "/yasser-creatives-test";
-        var newPath = window.location.pathname.replace(basePath, ""); // Remove base path
-        window.location.replace(basePath + "/#" + newPath); // Redirect to hash-based route
+        var redirectPath = window.location.pathname.replace('/yasser-creatives-test', ''); 
+        if (redirectPath && !redirectPath.startsWith('/#/')) {
+            window.location.replace('/yasser-creatives-test/#' + redirectPath);
+        }
     </script>
 </head>
 <body>
