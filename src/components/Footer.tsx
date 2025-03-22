@@ -1,5 +1,9 @@
 import React from 'react';
+<<<<<<< HEAD
 import { Instagram, Facebook, Linkedin, MessageCircle, Mail, MapPin, Clock } from 'lucide-react';
+=======
+import { Instagram, Facebook, Linkedin, MessageCircle, Mail, MapPin } from 'lucide-react';
+>>>>>>> 6008eb6 (Initial commit)
 
 const Footer: React.FC = () => {
   const currentTime = new Date().toLocaleTimeString('en-US', {

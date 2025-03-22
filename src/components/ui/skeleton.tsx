@@ -1,6 +1,7 @@
 import React from 'react'
 import { cn } from '@/lib/utils'
 
+<<<<<<< HEAD
 interface SkeletonProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string
   variant?: 'text' | 'circular' | 'rectangular' | 'rounded'
@@ -23,9 +24,22 @@ const Skeleton = ({
         },
         className
       )}
+=======
+function Skeleton({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) {
+  return (
+    <div
+      className={cn("animate-pulse rounded-md bg-muted", className)}
+>>>>>>> 6008eb6 (Initial commit)
       {...props}
     />
   )
 }
 
+<<<<<<< HEAD
 export default Skeleton
+=======
+export { Skeleton }
+>>>>>>> 6008eb6 (Initial commit)

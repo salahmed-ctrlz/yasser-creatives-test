@@ -1,5 +1,9 @@
 import React, { createContext, useContext, useState } from 'react';
+<<<<<<< HEAD
 import { translations, Translations } from '@/lib/translations';
+=======
+import { translations } from '@/lib/translations';
+>>>>>>> 6008eb6 (Initial commit)
 
 type Language = 'en' | 'ar';
 

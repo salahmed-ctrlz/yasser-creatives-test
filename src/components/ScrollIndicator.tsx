@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
+=======
+import { useState, useEffect } from 'react';
+>>>>>>> 6008eb6 (Initial commit)
 import { motion, AnimatePresence } from 'framer-motion';
 
 const ScrollIndicator = () => {

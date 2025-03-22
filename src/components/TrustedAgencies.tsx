@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
+=======
+import { useState, useEffect } from 'react';
+>>>>>>> 6008eb6 (Initial commit)
 import { motion } from 'framer-motion';
 import { useTheme } from 'next-themes';
 import { LogoBlack, LogoWhite } from '@/lib/images';
