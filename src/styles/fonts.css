@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('/fonts/Helvatica Now Display/HELVETICANOWDISPLAY-REGULAR.OTF') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('/fonts/Helvatica Now Display/HELVETICANOWDISPLAY-MEDIUM.OTF') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('/fonts/Helvatica Now Display/HELVETICANOWDISPLAY-BOLD.OTF') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('/fonts/Helvatica Now Display/HELVETICANOWDISPLAY-BLACK.OTF') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Neue Haas Grotesk */
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('/fonts/Neue Haas Grotesk/NeueHaasDisplayRoman.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('/fonts/Neue Haas Grotesk/NeueHaasDisplayMediu.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('/fonts/Neue Haas Grotesk/NeueHaasDisplayBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('/fonts/Neue Haas Grotesk/NeueHaasDisplayBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* At Hauss Arabic */
+@font-face {
+  font-family: 'At Hauss Arabic';
+  src: url('/fonts/At Hauss arabic/ATHAUSSARABIC-REGULAR.OTF') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'At Hauss Arabic';
+  src: url('/fonts/At Hauss arabic/ATHAUSSARABIC-MEDIUM.OTF') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'At Hauss Arabic';
+  src: url('/fonts/At Hauss arabic/ATHAUSSARABIC-BOLD.OTF') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* CSS Variables for Font Families */
+:root {
+  --font-heading: 'Helvetica Now Display', 'Neue Haas Grotesk', sans-serif;
+  --font-body: 'At Hauss Arabic', sans-serif;
+} 
