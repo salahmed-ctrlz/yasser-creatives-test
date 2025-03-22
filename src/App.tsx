@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import MainLayout from './layouts/MainLayout';
@@ -31,7 +31,7 @@ const App = () => {
                   <Route path="/project/:id" element={<ProjectDetail />} />
                   <Route path="/logos" element={<LogoGallery />} />
                   <Route path="/contact" element={<Contact />} />
-                  <Route path="*" element={<NotFound />} />
+                  <Route path="*" element={<Navigate to="/" replace />} />
                 </Routes>
               </MainLayout>
             </Router>

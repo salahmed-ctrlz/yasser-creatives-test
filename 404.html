@@ -8,9 +8,9 @@
         // Redirect all unknown pages to index.html while preserving the URL
         const path = window.location.pathname;
         if (path.startsWith('/yasser-creatives-test/')) {
-            window.location.replace(path);
+            window.location.replace(`/${path}`);
         } else {
-            window.location.replace(`/yasser-creatives-test${path}`);
+            window.location.replace(`/yasser-creatives-test/${path}`);
         }
     </script>
 </head>
