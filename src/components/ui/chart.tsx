@@ -1,7 +1,5 @@
 import * as React from "react"
 import * as RechartsPrimitive from "recharts"
-<<<<<<< HEAD
-=======
 import {
   LineChart,
   Line,
@@ -11,7 +9,6 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts"
->>>>>>> 6008eb6 (Initial commit)
 
 import { cn } from "@/lib/utils"
 
@@ -365,8 +362,6 @@ function getPayloadConfigFromPayload(
     : config[key as keyof typeof config]
 }
 
-<<<<<<< HEAD
-=======
 interface ChartProps extends React.HTMLAttributes<HTMLDivElement> {
   data: any[]
   xKey: string
@@ -399,7 +394,6 @@ const Chart = React.forwardRef<HTMLDivElement, ChartProps>(
 )
 Chart.displayName = "Chart"
 
->>>>>>> 6008eb6 (Initial commit)
 export {
   ChartContainer,
   ChartTooltip,
@@ -407,8 +401,5 @@ export {
   ChartLegend,
   ChartLegendContent,
   ChartStyle,
-<<<<<<< HEAD
-=======
   Chart,
->>>>>>> 6008eb6 (Initial commit)
 }

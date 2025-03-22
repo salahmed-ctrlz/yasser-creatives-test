@@ -4,19 +4,12 @@ import { Instagram, Facebook, Linkedin, MessageCircle, Mail, ExternalLink } from
 import { fadeUpVariant, staggerContainer } from '@/lib/animations';
 import { ContactForm } from '@/components';
 import CopyToClipboard from '@/components/ui/copy-to-clipboard';
-<<<<<<< HEAD
-import HoverCard from '@/components/ui/hover-card';
-=======
->>>>>>> 6008eb6 (Initial commit)
 import ScrollProgress from '@/components/ui/scroll-progress';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Contact = () => {
   const { t, language } = useLanguage();
-<<<<<<< HEAD
-=======
   const [hoveredCard, setHoveredCard] = React.useState<string | null>(null);
->>>>>>> 6008eb6 (Initial commit)
 
   const socialLinks = [
     {
@@ -102,29 +95,11 @@ const Contact = () => {
                   <h3 className="text-lg font-medium mb-4">Connect With Me</h3>
                   <div className="grid grid-cols-2 gap-4">
                     {socialLinks.map((social) => (
-<<<<<<< HEAD
-                      <HoverCard
-                        key={social.name}
-                        content={
-                          <div className="space-y-2">
-                            <p className="text-sm text-muted-foreground">{social.description}</p>
-                            <a
-                              href={social.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-xs text-primary hover:underline inline-flex items-center gap-1"
-                            >
-                              Visit <ExternalLink className="w-3 h-3" />
-                            </a>
-                          </div>
-                        }
-=======
                       <div
                         key={social.name}
                         className="relative"
                         onMouseEnter={() => setHoveredCard(social.name)}
                         onMouseLeave={() => setHoveredCard(null)}
->>>>>>> 6008eb6 (Initial commit)
                       >
                         <a
                           href={social.url}
@@ -135,9 +110,6 @@ const Contact = () => {
                           {social.icon}
                           <span className="font-medium">{social.name}</span>
                         </a>
-<<<<<<< HEAD
-                      </HoverCard>
-=======
                         {hoveredCard === social.name && (
                           <div className="absolute z-50 w-64 p-4 mt-2 rounded-md border bg-popover text-popover-foreground shadow-md">
                             <div className="space-y-2">
@@ -154,7 +126,6 @@ const Contact = () => {
                           </div>
                         )}
                       </div>
->>>>>>> 6008eb6 (Initial commit)
                     ))}
                   </div>
                 </div>

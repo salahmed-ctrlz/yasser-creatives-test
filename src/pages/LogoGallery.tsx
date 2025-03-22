@@ -2,12 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import ScrollProgress from '@/components/ui/scroll-progress';
 import { useLanguage } from '@/contexts/LanguageContext';
-<<<<<<< HEAD
-import { fadeUpVariant, staggerContainer } from '@/lib/animations';
-=======
 import { translations } from '@/lib/translations';
 import LogoGrid from '@/components/LogoGrid';
->>>>>>> 6008eb6 (Initial commit)
 import { Logo1, Logo2, Logo3, Logo4, Logo5, Logo6, Logo7, Logo8, Logo9, Logo10, Logo11, Logo12 } from '@/lib/images';
 
 const logos = [

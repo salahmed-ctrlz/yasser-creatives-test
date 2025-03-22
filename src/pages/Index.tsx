@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
-import Layout from '@/components/Layout'
+import Layout from '@/components/Layouts'
 import { Link } from 'react-router-dom'
 import "../styles/fonts.css";
 
